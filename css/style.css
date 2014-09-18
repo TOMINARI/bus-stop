@@ -1,0 +1,45 @@
+
+body{overflow:scroll;}
+#site-box1 div {
+
+}
+
+#title{
+	width: 98%;
+	margin: 1px;
+	padding: 2px;
+	background: -webkit-gradient(linear,left top, right bottom, from(#CCFF99), to(#99FFCC));
+	border-radius: 3px;
+}
+
+#contents{
+	color :#FFFFFF ;
+	margin: 1px;
+	padding: 2px;
+	background-image: url(gassho_no_sato.jpg);
+	background-position:center;
+	border-radius: 3px;
+}
+
+#time{
+	margin: 5px;
+}
+
+#site-box2 div {
+}
+
+#alert1{
+	padding:5px;
+}
+
+#alert2{
+	padding:5px;
+}
+
+#time-approach{
+	padding:5px;
+}
+
+#button{
+	padding:5px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>バス・ストップ！</title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry&sensor=true"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap -->
+<link href="css/styles.css" rel="stylesheet" media="screen">
+<link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body onload="createMap()">
+
+<div id = "site-box1">
+  <!--<div id = "title" style="font-size:large;">
+  <h3>バス・ストップ！</h3>
+  </div>-->
+  <div id = "contents">
+  <h4>バス・ストップ！<br><big>合掌の里（なんバス）</big></h4>
+  </div>
+  <div id = "time" style="font-size:medium;">
+    バス到着まであと 10分
+  </div>
+</div>
+
+  <div id="map" style="width: 100%; height: 300px;"></div>
+
+	<div class="container">
+  <form>
+
+ <div id ="size-box2">
+  <div id="alert1">
+  <label class="radio" for="bus_alert1"><input type="radio" name="bus_alert" value="1" checked id="bus_alert1">バスが来るたびにお知らせ</label><br>
+  </div>
+
+  <div id="alert2">
+  <label class="radio" for="bus_alert2"><input type="radio" name="bus_alert" value="2" id="bus_alert2">時間帯指定</label><br>
+</div>
+  <div id ="time-approach">
+  <input type="time" name="time_from" step="1800" style="width:80px;">　～　<input type="time" size="10" name="time_to" step="1800" style="width:80px;"><br>
+  </div>
+  <input type="button" name="regist" value="設定を保存" class="btn" onClick="save()"/>
+</div>
+  </form>
+  <!-- JavaScript plugins (requires jQuery) -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) 
+  <script src="js/respond.js"></script>
+  -->  
+  <!-- ブックマークお勧めポップアップ-->
+  <script src="js/bookmark-bubble/bookmark_bubble.min.js"></script>
+  <script src="js/bookmark-bubble/example/example.min.js"></script>
+  <script src="js/setting.js"></script>
+  <script src="js/script.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript">
+  function save() {
+    window.location.href = 'BusHackathon.html';
+  }
+  </script>
+</div>
+</body>
+</html>

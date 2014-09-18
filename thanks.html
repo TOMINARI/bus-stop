@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>バス・ストップ！</title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry&sensor=true"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap -->
+<link href="css/styles.css" rel="stylesheet" media="screen">
+<link href="css/styles3.css" rel="stylesheet" media="screen">
+</head>
+<body onload="createMap();message();">
+<div id="site-box">
+  <div id="contents" style="font-size:large;">
+  <h3>バス・ストップ！ <br> <big>合掌の里（なんバス） <big></h3>
+</div>
+  <div id="time" style="font-size:medium;">あと 3分</div>
+
+  <div id="map" style="width: 100%; height: 300px;"></div>
+
+	<div class="container">
+  <form>
+
+	<div id="arigato"> 
+  <input type="button" name="ok" value="ありがとう！" class="btn" onclick="thanks(),save()" style="width:100%; HEIGHT:40px" />
+	</div>
+	<div id="zannen">
+	<input type="button" name="ng" value="乗れませんでした。。" class="btn" onclick="sorry(),save();" style="width:100%; HEIGHT:40px"/>
+	</div>
+  </form>
+</div>
+  </div>
+  <!-- JavaScript plugins (requires jQuery) -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) 
+  <script src="js/respond.js"></script>
+  -->  
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+  function message() {
+	  alert('車内投票により出発時間から5分間発車を待ってもらえることになりました！無事バスに乗れたら、ありがとうボタンで感謝の気持ちを伝えてください！');
+  }
+  function thanks() {
+	  alert('ありがとう！を送信しました。');
+  }
+  function sorry() {
+	  alert('ごめんなさい！乗れませんでした。を送信しました。');
+  }
+  function save(){
+    window.location.href = 'BusHackathon.html';
+  }
+  </script>
+</body>
+</html>
